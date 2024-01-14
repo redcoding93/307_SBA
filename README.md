@@ -73,5 +73,7 @@ Support this project by becoming a sponsor. Your logo will show up here with a l
 
 
 ## Acknowledgments
-
-Thanks to Per Scholas for supporting the website!
+Thank you W3Schools for assistance with the forms and tables!
+Thank you Gifer for the gifs!
+Thank you Pixabay for the images!
+Thanks to Per Scholas for inspiring the website!
