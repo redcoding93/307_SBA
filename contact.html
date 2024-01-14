@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contact page</title>
+  <style>
+  
+    /* * {
+  border: 1px solid black;
+} */
+body {
+    display: flex;
+   
+    justify-content:left;
+    font-family: Arial, Helvetica, sans-serif;
+  /* width: 100%; */
+  background: radial-gradient(circle, hsla(34, 100%, 50%, 1) 52%, hsla(34, 100%, 50%, 1) 52%, hsla(354, 62%, 51%, 1) 94%);
+
+}
+
+/* nav {
+  overflow: hidden;
+  background-color: #76030F;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  color: white;
+} */
+nav li {
+  list-style-type: none;
+  text-align: left;
+  width: 100%;
+  display: inline;
+  margin-bottom: 20%;
+  margin-right: 2%;
+
+}
+
+button {
+    background-color: white;
+    color: #76030F;
+    font-weight: bold;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: black;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: white;
+  color: black;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin-top: 7%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #76030F;
+    color: white;
+}
+
+
+footer {
+  overflow: hidden;
+  background-color: #76030F;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  text-align: center;
+  margin-top: 5%;
+  left: 0;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+.dropdown {
+  background-color: #76030F;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  color: white;
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #76030F;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  color: white;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+form {
+    color: white;
+}
+  </style>
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ol>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn"><button>Menu</button></a>
+                    <div class="dropdown-content">
+                      <a href="index.html">Home</a>
+                      <a href="about.html">About/Subscribe</a>
+                      <a href="signup.html">Sign Up</a>
+                      <div class="login-container">
+                        <form>
+                          <input type="text" placeholder="Username" name="username">
+                          <input type="text" placeholder="Password" name="psw">
+                          <button type="submit">Login</button>
+                        </form>
+                      </div>
+                    </div>
+                  </li>
+              </ol>
+        </nav>
+      </header>
+
+
+  <div class="container">
+    <h1>Contact Us</h1>
+    <p style="text-align: center;">We would love to receive your feedback, story suggestions, questions and comments!</p>
+    <form>
+      <label for="fname">First Name</label>
+      <input type="text" id="fname" name="firstname" placeholder="Your name..">
+  
+      <label for="lname">Last Name</label>
+      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+  
+      <label for="subject">Subject</label>
+      <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+  
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+
+
+
+
+  <footer>
+    <h5>Copyright © 2023 The Narrative </h5>
+    </h5>
+    </h6>
+</footer>
+</body>
+</html>

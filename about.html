@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>About page</title>
+  <style>
+  
+    /* * {
+  border: 1px solid black;
+} */
+body {
+    display: flex;
+   
+    justify-content:left;
+    font-family: Arial, Helvetica, sans-serif;
+  /* width: 100%; */
+  background: radial-gradient(circle, hsla(34, 100%, 50%, 1) 52%, hsla(34, 100%, 50%, 1) 52%, hsla(354, 62%, 51%, 1) 94%);
+
+}
+
+/* nav {
+  overflow: hidden;
+  background-color: #76030F;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  color: white;
+} */
+nav li {
+  list-style-type: none;
+  text-align: left;
+  width: 100%;
+  display: inline;
+  margin-bottom: 20%;
+  margin-right: 2%;
+
+}
+
+button {
+    background-color: white;
+    color: #76030F;
+    font-weight: bold;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: black;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #76030F;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin-top: 7%;
+  background-color: #76030F;
+    color: white;
+}
+
+
+footer {
+  overflow: hidden;
+  background-color: #76030F;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  text-align: center;
+  margin-top: 5%;
+  left: 0;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+.dropdown {
+  background-color: #76030F;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  color: white;
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #76030F;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  color: white;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+table {
+    margin-top: 10%;
+    width: 5%;
+}
+
+/* h2, p {
+    margin-top: 10%;
+    margin-left: 5%;
+    display: inline-block;
+} */
+
+.about {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+}
+
+tr {
+    width: 10%;
+    height: 10%;
+
+}
+  </style>
+
+</head>
+
+<body>
+  <header>
+    <nav>
+        <ol>
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn"><button>Menu</button></a>
+                <div class="dropdown-content">
+                  <a href="index.html">Home</a>
+                  <a href="contact.html">Contact</a>
+                  <a href="signup.html">Sign Up</a>
+                  <div class="login-container">
+                    <form>
+                      <input type="text" placeholder="Username" name="username">
+                      <input type="text" placeholder="Password" name="psw">
+                      <button type="submit">Login</button>
+                    </form>
+                  </div>
+                </div>
+              </li>
+          </ol>
+    </nav>
+  </header>
+   <div class="about">
+   <h1>About</h1>
+   <p>Phasellus et nisi tempus nisl placerat euismod sed pellentesque eros. Ut nulla sapien, egestas id neque pretium, fermentum tincidunt ex. Nam et turpis volutpat, fringilla velit at, aliquam eros. Nullam et mauris tortor. Nam scelerisque ac risus ut dictum. Nulla elementum mi vel augue efficitur venenatis. Praesent ullamcorper finibus consequat. Morbi sodales et nibh eget vestibulum. Integer sollicitudin pharetra ante, sed egestas mi viverra sit amet.</p>
+   <h2>Subscription plans</h2>
+   <p>Support accurate and timely news from around the world with no political or corporate influence.</p>
+ 
+  <table style="width: 100%;">
+  <colgroup>
+    <col span="3" style="background-color: #D6EEEE">
+  </colgroup>
+  <tr>
+  <th style="background-color: #76030F; color: white;">Free</th>
+  <th style="background-color: #76030F; color: white;">$1</th>
+  <th style="background-color: #76030F; color: white;">$5</th>
+  </tr>
+  <tr>
+  <td>Remove ads</td>
+  <td>10 extra votes</td>
+  <td>25 extra votes</td>
+  </tr>
+  <tr>
+  <td>Follow your favorite stories</td>
+  <td>Priority story submissions</td>
+  <td>Fun</td>
+  </tr>
+  <tr>
+  <td>Newsletter</td>
+  <td>RSS feed</td>
+  <td>Ad free podcast</td>
+  </tr>
+  <tr>
+  <td>Super Powers</td>
+  <td>End world hunger</td>
+  <td>Unlimited voting</td>
+  </tr>
+  </table>
+</div>
+  </body>
+  </html>
+
+
+
+
+  <footer>
+    <h5>Copyright © 2023 The Narrative </h5>
+    </h5>
+    </h6>
+</footer>
+</body>
+</html>
